@@ -1,0 +1,15 @@
+<h1>DVZ personaje </h1>
+<hr>
+
+<div>
+  <div class="row">
+    <div class="col">
+      <dvz-list [characterList]="character"
+      (onDelete)="onDeleteCharacter($event)"
+      ></dvz-list>
+    </div>
+
+    <div class="col">
+      <dvz-add-changer (onNewCharacter)="onNewCharacter($event)"></dvz-add-changer>
+    </div>
+  </div>
